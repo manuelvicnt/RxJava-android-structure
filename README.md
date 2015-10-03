@@ -18,6 +18,9 @@ There are some things to have into account when exploring the project:
 ### Set up
 When the registration is successful, it stores a value in SharedPreferences (that's how it goes to Login or Registration). To force registration, you can uninstall the app and install it again or clear cache data in the App info (Settings > Apps > Select App).
 
+### Unit Testing
+RegistrationAPIService is tested. The rest of the classes can be tested in the same way. Be aware of threading problems.
+
 ### Sad Paths
 You can change the response of the network request with the files stored in the assets folder. Change the 200 response for a 400, for example. That gives you the ability of exploring different sad paths.
 

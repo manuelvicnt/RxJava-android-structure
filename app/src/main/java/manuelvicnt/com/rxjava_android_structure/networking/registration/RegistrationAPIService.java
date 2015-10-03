@@ -26,6 +26,10 @@ public class RegistrationAPIService {
         return isRequestingRegistration;
     }
 
+    public void setRegistrationAPI(IRegistrationAPI registrationAPI) {
+        this.registrationAPI = registrationAPI;
+    }
+
     public Observable<RegistrationResponse> register(RegistrationRequest request) {
 
         return registrationAPI.register(request)
